@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = @CMakeFiles/The_tower_of_pain.dir/includes_CXX.rsp
 
-CXX_FLAGS = 
+CXX_FLAGS = -O3 -DNDEBUG
 
