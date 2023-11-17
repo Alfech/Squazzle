@@ -7,11 +7,12 @@ This project is a video game so I can have a better usage of all my unproductive
 <i>Note : This version is the one used by the SFML dev.</i><br>
 3. You need an IDE ;)<br>
 4. When everything is properly set up, you just need to run build.bat. You should not have to think any further now xD<br>
+Argument of the .bat file :
 ```
-echo The code will be compiled. You have chosen %buildType% mode.
-echo -r, -R, --Release          To build in release mode
-echo -d, -D, --Debug            To build in debug mode
+-r, -R, --Release          To build in release mode
+-d, -D, --Debug            To build in debug mode
 ```
+<i>Note : if you do not give any argument, Release mode will be chosed by default</i><br>
 
 you do not need to install SFML since it is already in the repo and already configured inside the cmake file. Also, if you add any .h or .cpp file, 
 please update cmakeLists.txt file in consequences. <br>
