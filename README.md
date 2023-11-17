@@ -7,7 +7,7 @@ This project is a video game so I can have a better usage of all my unproductive
 <i>Note : This version is the one used by the SFML dev.</i><br>
 3. You need an IDE ;)<br>
 4. When everything is properly set up, you just need to run build.bat. You should not have to think any further now xD<br>
-````
+```
 echo The code will be compiled. You have chosen %buildType% mode.
 echo -r, -R, --Release          To build in release mode
 echo -d, -D, --Debug            To build in debug mode
