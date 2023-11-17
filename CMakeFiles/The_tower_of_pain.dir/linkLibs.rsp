@@ -1,0 +1,1 @@
+ "libraries/SFML-2.6.1/lib/libsfml-graphics.a" "libraries/SFML-2.6.1/lib/libsfml-audio.a" "libraries/SFML-2.6.1/lib/libsfml-network.a" "libraries/SFML-2.6.1/lib/libsfml-window.a" "libraries/SFML-2.6.1/lib/libsfml-system.a" -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
