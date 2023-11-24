@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.exe"
-  "C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.exe.manifest"
-  "C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.pdb"
+  "C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe"
+  "C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe.manifest"
+  "C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.pdb"
   "CMakeFiles/Squazzle.dir/src/Main.cpp.obj"
   "CMakeFiles/Squazzle.dir/src/Main.cpp.obj.d"
   "CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj"

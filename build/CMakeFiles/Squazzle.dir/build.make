@@ -52,10 +52,10 @@ RM = C:\mingw64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain
+CMAKE_SOURCE_DIR = C:\Users\lafle\Desktop\Squazzle\Squazzle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\build
+CMAKE_BINARY_DIR = C:\Users\lafle\Desktop\Squazzle\Squazzle\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Squazzle.dir/depend.make
@@ -70,48 +70,48 @@ include CMakeFiles/Squazzle.dir/flags.make
 
 CMakeFiles/Squazzle.dir/src/Main.cpp.obj: CMakeFiles/Squazzle.dir/flags.make
 CMakeFiles/Squazzle.dir/src/Main.cpp.obj: CMakeFiles/Squazzle.dir/includes_CXX.rsp
-CMakeFiles/Squazzle.dir/src/Main.cpp.obj: C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/src/Main.cpp
+CMakeFiles/Squazzle.dir/src/Main.cpp.obj: C:/Users/lafle/Desktop/Squazzle/Squazzle/src/Main.cpp
 CMakeFiles/Squazzle.dir/src/Main.cpp.obj: CMakeFiles/Squazzle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Squazzle.dir/src/Main.cpp.obj"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Squazzle.dir/src/Main.cpp.obj -MF CMakeFiles\Squazzle.dir\src\Main.cpp.obj.d -o CMakeFiles\Squazzle.dir\src\Main.cpp.obj -c C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\src\Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\lafle\Desktop\Squazzle\Squazzle\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Squazzle.dir/src/Main.cpp.obj"
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Squazzle.dir/src/Main.cpp.obj -MF CMakeFiles\Squazzle.dir\src\Main.cpp.obj.d -o CMakeFiles\Squazzle.dir\src\Main.cpp.obj -c C:\Users\lafle\Desktop\Squazzle\Squazzle\src\Main.cpp
 
 CMakeFiles/Squazzle.dir/src/Main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Squazzle.dir/src/Main.cpp.i"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\src\Main.cpp > CMakeFiles\Squazzle.dir\src\Main.cpp.i
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lafle\Desktop\Squazzle\Squazzle\src\Main.cpp > CMakeFiles\Squazzle.dir\src\Main.cpp.i
 
 CMakeFiles/Squazzle.dir/src/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Squazzle.dir/src/Main.cpp.s"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\src\Main.cpp -o CMakeFiles\Squazzle.dir\src\Main.cpp.s
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lafle\Desktop\Squazzle\Squazzle\src\Main.cpp -o CMakeFiles\Squazzle.dir\src\Main.cpp.s
 
 CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj: CMakeFiles/Squazzle.dir/flags.make
 CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj: CMakeFiles/Squazzle.dir/includes_CXX.rsp
-CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj: C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/src/core/Game.cpp
+CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj: C:/Users/lafle/Desktop/Squazzle/Squazzle/src/core/Game.cpp
 CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj: CMakeFiles/Squazzle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj -MF CMakeFiles\Squazzle.dir\src\core\Game.cpp.obj.d -o CMakeFiles\Squazzle.dir\src\core\Game.cpp.obj -c C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\src\core\Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\lafle\Desktop\Squazzle\Squazzle\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj"
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj -MF CMakeFiles\Squazzle.dir\src\core\Game.cpp.obj.d -o CMakeFiles\Squazzle.dir\src\core\Game.cpp.obj -c C:\Users\lafle\Desktop\Squazzle\Squazzle\src\core\Game.cpp
 
 CMakeFiles/Squazzle.dir/src/core/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Squazzle.dir/src/core/Game.cpp.i"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\src\core\Game.cpp > CMakeFiles\Squazzle.dir\src\core\Game.cpp.i
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lafle\Desktop\Squazzle\Squazzle\src\core\Game.cpp > CMakeFiles\Squazzle.dir\src\core\Game.cpp.i
 
 CMakeFiles/Squazzle.dir/src/core/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Squazzle.dir/src/core/Game.cpp.s"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\src\core\Game.cpp -o CMakeFiles\Squazzle.dir\src\core\Game.cpp.s
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lafle\Desktop\Squazzle\Squazzle\src\core\Game.cpp -o CMakeFiles\Squazzle.dir\src\core\Game.cpp.s
 
 CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj: CMakeFiles/Squazzle.dir/flags.make
 CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj: CMakeFiles/Squazzle.dir/includes_CXX.rsp
-CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj: C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/src/core/Menu.cpp
+CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj: C:/Users/lafle/Desktop/Squazzle/Squazzle/src/core/Menu.cpp
 CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj: CMakeFiles/Squazzle.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj -MF CMakeFiles\Squazzle.dir\src\core\Menu.cpp.obj.d -o CMakeFiles\Squazzle.dir\src\core\Menu.cpp.obj -c C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\src\core\Menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\lafle\Desktop\Squazzle\Squazzle\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj"
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj -MF CMakeFiles\Squazzle.dir\src\core\Menu.cpp.obj.d -o CMakeFiles\Squazzle.dir\src\core\Menu.cpp.obj -c C:\Users\lafle\Desktop\Squazzle\Squazzle\src\core\Menu.cpp
 
 CMakeFiles/Squazzle.dir/src/core/Menu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Squazzle.dir/src/core/Menu.cpp.i"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\src\core\Menu.cpp > CMakeFiles\Squazzle.dir\src\core\Menu.cpp.i
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lafle\Desktop\Squazzle\Squazzle\src\core\Menu.cpp > CMakeFiles\Squazzle.dir\src\core\Menu.cpp.i
 
 CMakeFiles/Squazzle.dir/src/core/Menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Squazzle.dir/src/core/Menu.cpp.s"
-	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\src\core\Menu.cpp -o CMakeFiles\Squazzle.dir\src\core\Menu.cpp.s
+	C:\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lafle\Desktop\Squazzle\Squazzle\src\core\Menu.cpp -o CMakeFiles\Squazzle.dir\src\core\Menu.cpp.s
 
 # Object files for target Squazzle
 Squazzle_OBJECTS = \
@@ -122,23 +122,23 @@ Squazzle_OBJECTS = \
 # External object files for target Squazzle
 Squazzle_EXTERNAL_OBJECTS =
 
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.exe: CMakeFiles/Squazzle.dir/src/Main.cpp.obj
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.exe: CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.exe: CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.exe: CMakeFiles/Squazzle.dir/build.make
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.exe: C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/lib/libsfml-graphics-d.a
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.exe: C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/lib/libsfml-audio-d.a
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.exe: C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/lib/libsfml-network-d.a
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.exe: C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/lib/libsfml-window-d.a
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.exe: C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/lib/libsfml-system-d.a
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.exe: CMakeFiles/Squazzle.dir/linkLibs.rsp
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.exe: CMakeFiles/Squazzle.dir/objects1.rsp
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.exe: CMakeFiles/Squazzle.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\out\Squazzle.exe"
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: CMakeFiles/Squazzle.dir/src/Main.cpp.obj
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: CMakeFiles/Squazzle.dir/build.make
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/lib/libsfml-graphics.a
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/lib/libsfml-audio.a
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/lib/libsfml-network.a
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/lib/libsfml-window.a
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/lib/libsfml-system.a
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: CMakeFiles/Squazzle.dir/linkLibs.rsp
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: CMakeFiles/Squazzle.dir/objects1.rsp
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: CMakeFiles/Squazzle.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\lafle\Desktop\Squazzle\Squazzle\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable C:\Users\lafle\Desktop\Squazzle\Squazzle\out\Squazzle.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Squazzle.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Squazzle.dir/build: C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/out/Squazzle.exe
+CMakeFiles/Squazzle.dir/build: C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe
 .PHONY : CMakeFiles/Squazzle.dir/build
 
 CMakeFiles/Squazzle.dir/clean:
@@ -146,6 +146,6 @@ CMakeFiles/Squazzle.dir/clean:
 .PHONY : CMakeFiles/Squazzle.dir/clean
 
 CMakeFiles/Squazzle.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\build C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\build C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\build\CMakeFiles\Squazzle.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\lafle\Desktop\Squazzle\Squazzle C:\Users\lafle\Desktop\Squazzle\Squazzle C:\Users\lafle\Desktop\Squazzle\Squazzle\build C:\Users\lafle\Desktop\Squazzle\Squazzle\build C:\Users\lafle\Desktop\Squazzle\Squazzle\build\CMakeFiles\Squazzle.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Squazzle.dir/depend
 

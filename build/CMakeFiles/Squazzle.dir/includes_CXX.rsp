@@ -1,1 +1,1 @@
--I"C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/include" -I"C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/./libraries/SFML-2.6.1/include/SFML" -isystem "C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include"
+-IC:/Users/lafle/Desktop/Squazzle/Squazzle/include -I"C:/Users/lafle/Desktop/Squazzle/Squazzle/./libraries/SFML-2.6.1/include/SFML" -isystem "C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include"

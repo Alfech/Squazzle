@@ -1,14 +1,14 @@
 CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj: \
- C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\src\core\Menu.cpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/include/core/Menu.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Config.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/Clock.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/Export.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/Time.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/Err.hpp \
+ C:\Users\lafle\Desktop\Squazzle\Squazzle\src\core\Menu.cpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/include/core/Menu.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Config.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Clock.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Export.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Time.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Err.hpp \
  C:/mingw64/include/c++/13.1.0/ostream \
  C:/mingw64/include/c++/13.1.0/bits/requires_hosted.h \
  C:/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -147,15 +147,15 @@ CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj: \
  C:/mingw64/include/c++/13.1.0/bits/locale_facets.tcc \
  C:/mingw64/include/c++/13.1.0/bits/basic_ios.tcc \
  C:/mingw64/include/c++/13.1.0/bits/ostream.tcc \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/FileInputStream.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/InputStream.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/NonCopyable.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/Lock.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/MemoryInputStream.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/Mutex.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/Sleep.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/String.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/Utf.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/FileInputStream.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/InputStream.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/NonCopyable.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Lock.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/MemoryInputStream.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Mutex.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Sleep.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/String.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Utf.hpp \
  C:/mingw64/include/c++/13.1.0/algorithm \
  C:/mingw64/include/c++/13.1.0/bits/stl_algo.h \
  C:/mingw64/include/c++/13.1.0/bits/algorithmfwd.h \
@@ -172,63 +172,63 @@ CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj: \
  C:/mingw64/include/c++/13.1.0/bits/codecvt.h \
  C:/mingw64/include/c++/13.1.0/bits/locale_facets_nonio.tcc \
  C:/mingw64/include/c++/13.1.0/bits/locale_conv.h \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/Utf.inl \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Utf.inl \
  C:/mingw64/include/c++/13.1.0/iterator \
  C:/mingw64/include/c++/13.1.0/bits/stream_iterator.h \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/String.inl \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/Thread.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/Thread.inl \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/ThreadLocal.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/ThreadLocalPtr.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/ThreadLocalPtr.inl \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/Vector2.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/Vector2.inl \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/Vector3.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/System/Vector3.inl \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/Clipboard.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/Export.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/Context.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/GlResource.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/ContextSettings.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/Cursor.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/Event.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/Joystick.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/Keyboard.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/Mouse.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/Sensor.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/Touch.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/VideoMode.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/String.inl \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Thread.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Thread.inl \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/ThreadLocal.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/ThreadLocalPtr.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/ThreadLocalPtr.inl \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Vector2.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Vector2.inl \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Vector3.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Vector3.inl \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/Clipboard.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/Export.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/Context.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/GlResource.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/ContextSettings.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/Cursor.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/Event.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/Joystick.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/Keyboard.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/Mouse.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/Sensor.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/Touch.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/VideoMode.hpp \
  C:/mingw64/include/c++/13.1.0/vector \
  C:/mingw64/include/c++/13.1.0/bits/stl_uninitialized.h \
  C:/mingw64/include/c++/13.1.0/bits/stl_vector.h \
  C:/mingw64/include/c++/13.1.0/bits/stl_bvector.h \
  C:/mingw64/include/c++/13.1.0/bits/vector.tcc \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/Window.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/WindowBase.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/Vulkan.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/WindowHandle.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/Window.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/WindowBase.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/Vulkan.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/WindowHandle.hpp \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Window/WindowStyle.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/BlendMode.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Export.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/CircleShape.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Shape.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Drawable.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/RenderStates.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Transform.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Rect.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Rect.inl \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Transformable.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/VertexArray.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Vertex.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Color.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/PrimitiveType.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/ConvexShape.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Font.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Glyph.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Texture.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Image.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window/WindowStyle.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/BlendMode.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Export.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/CircleShape.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Shape.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Drawable.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/RenderStates.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Transform.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Rect.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Rect.inl \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Transformable.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/VertexArray.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Vertex.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Color.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/PrimitiveType.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/ConvexShape.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Font.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Glyph.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Texture.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Image.hpp \
  C:/mingw64/include/c++/13.1.0/map \
  C:/mingw64/include/c++/13.1.0/bits/stl_tree.h \
  C:/mingw64/include/c++/13.1.0/ext/aligned_buffer.h \
@@ -236,17 +236,17 @@ CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj: \
  C:/mingw64/include/c++/13.1.0/bits/stl_map.h \
  C:/mingw64/include/c++/13.1.0/bits/stl_multimap.h \
  C:/mingw64/include/c++/13.1.0/bits/erase_if.h \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/RectangleShape.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/RenderTarget.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/View.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/RenderTexture.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/RenderWindow.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Shader.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Glsl.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Glsl.inl \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Sprite.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/Text.hpp \
- C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/libraries/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/RectangleShape.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/RenderTarget.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/View.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/RenderTexture.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/RenderWindow.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Shader.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Glsl.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Glsl.inl \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Sprite.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/Text.hpp \
+ C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics/VertexBuffer.hpp \
  C:/mingw64/include/c++/13.1.0/iostream \
  C:/mingw64/include/c++/13.1.0/istream \
  C:/mingw64/include/c++/13.1.0/bits/istream.tcc \

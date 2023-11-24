@@ -1,3 +1,3 @@
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/build/CMakeFiles/Squazzle.dir
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/build/CMakeFiles/edit_cache.dir
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/build/CMakeFiles/rebuild_cache.dir
+C:/Users/lafle/Desktop/Squazzle/Squazzle/build/CMakeFiles/Squazzle.dir
+C:/Users/lafle/Desktop/Squazzle/Squazzle/build/CMakeFiles/edit_cache.dir
+C:/Users/lafle/Desktop/Squazzle/Squazzle/build/CMakeFiles/rebuild_cache.dir
