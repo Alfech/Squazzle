@@ -1,52 +1,52 @@
 #include "../../include/core/Game.hpp"
-#include <SFML/Window.hpp>
 
-Game::Game(std::string title){
-    //std::vector<sf::VideoMode> modes = sf::VideoMode::getFullscreenModes();sf::VideoMode::getFullscreenModes();
+Game::Game(std::string title) : Game(title, sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height, sf::VideoMode::getDesktopMode().bitsPerPixel) {}
+
+
+Game::Game(std::string title, unsigned int windowWidth, unsigned int windowHeight, unsigned int bitsPerPixel)
+    : videoMode(windowWidth, windowHeight, bitsPerPixel),
+    window(videoMode, title),
+    menu(static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y)) {}
     
-    sf::VideoMode desktop = sf::VideoMode::getDesktopMode();
-
-    Game(title, desktop.width, desktop.height, desktop.bitsPerPixel);
+Game::~Game() {
+    window.close();
 }
 
-Game::Game(std::string title, unsigned int windowWidth, unsigned int windowHeight, unsigned int bitsPerPixel){
-    
-    videoMode = sf::VideoMode(windowWidth, windowHeight, bitsPerPixel);
-    window.create(videoMode, title);
-    
-}
+void Game::start() {
 
-Game::~Game(){
-   window.close();
-}
-
-void Game::start(){
-
-    while(window.isOpen()){
+    while(window.isOpen()) {
 
         sf::Event event;
 
-        while(window.pollEvent(event)){
+        while(window.pollEvent(event)) {
 
-            if(event.type == sf::Event::Closed){
-                this->stop();
+            switch (event.type) {
+            case sf::Event::Closed:
+                stop();
+                break;
+
+            default:
+                break;
             }
+
         }
 
+        window.clear();
+        menu.draw(window);
+        window.display();
     }
 
 }
 
-void Game::stop(){
-
-    this->~Game();
+void Game::stop() {
+    window.close();
 }
 
-void Game::pause(){
+void Game::pause() {
 
 }
 
-void Game::update(){
+void Game::update() {
 
 }
 

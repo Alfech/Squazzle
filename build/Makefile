@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named The_tower_of_pain
+# Target rules for targets named Squazzle
 
 # Build rule for target.
-The_tower_of_pain: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 The_tower_of_pain
-.PHONY : The_tower_of_pain
+Squazzle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Squazzle
+.PHONY : Squazzle
 
 # fast build rule for target.
-The_tower_of_pain/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\The_tower_of_pain.dir\build.make CMakeFiles/The_tower_of_pain.dir/build
-.PHONY : The_tower_of_pain/fast
+Squazzle/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/build
+.PHONY : Squazzle/fast
 
 src/Main.obj: src/Main.cpp.obj
 .PHONY : src/Main.obj
 
 # target to build an object file
 src/Main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\The_tower_of_pain.dir\build.make CMakeFiles/The_tower_of_pain.dir/src/Main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/src/Main.cpp.obj
 .PHONY : src/Main.cpp.obj
 
 src/Main.i: src/Main.cpp.i
@@ -141,7 +141,7 @@ src/Main.i: src/Main.cpp.i
 
 # target to preprocess a source file
 src/Main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\The_tower_of_pain.dir\build.make CMakeFiles/The_tower_of_pain.dir/src/Main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/src/Main.cpp.i
 .PHONY : src/Main.cpp.i
 
 src/Main.s: src/Main.cpp.s
@@ -149,7 +149,7 @@ src/Main.s: src/Main.cpp.s
 
 # target to generate assembly for a file
 src/Main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\The_tower_of_pain.dir\build.make CMakeFiles/The_tower_of_pain.dir/src/Main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
 src/core/Game.obj: src/core/Game.cpp.obj
@@ -157,7 +157,7 @@ src/core/Game.obj: src/core/Game.cpp.obj
 
 # target to build an object file
 src/core/Game.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\The_tower_of_pain.dir\build.make CMakeFiles/The_tower_of_pain.dir/src/core/Game.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj
 .PHONY : src/core/Game.cpp.obj
 
 src/core/Game.i: src/core/Game.cpp.i
@@ -165,7 +165,7 @@ src/core/Game.i: src/core/Game.cpp.i
 
 # target to preprocess a source file
 src/core/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\The_tower_of_pain.dir\build.make CMakeFiles/The_tower_of_pain.dir/src/core/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/src/core/Game.cpp.i
 .PHONY : src/core/Game.cpp.i
 
 src/core/Game.s: src/core/Game.cpp.s
@@ -173,8 +173,32 @@ src/core/Game.s: src/core/Game.cpp.s
 
 # target to generate assembly for a file
 src/core/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\The_tower_of_pain.dir\build.make CMakeFiles/The_tower_of_pain.dir/src/core/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/src/core/Game.cpp.s
 .PHONY : src/core/Game.cpp.s
+
+src/core/Menu.obj: src/core/Menu.cpp.obj
+.PHONY : src/core/Menu.obj
+
+# target to build an object file
+src/core/Menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj
+.PHONY : src/core/Menu.cpp.obj
+
+src/core/Menu.i: src/core/Menu.cpp.i
+.PHONY : src/core/Menu.i
+
+# target to preprocess a source file
+src/core/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/src/core/Menu.cpp.i
+.PHONY : src/core/Menu.cpp.i
+
+src/core/Menu.s: src/core/Menu.cpp.s
+.PHONY : src/core/Menu.s
+
+# target to generate assembly for a file
+src/core/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/src/core/Menu.cpp.s
+.PHONY : src/core/Menu.cpp.s
 
 # Help Target
 help:
@@ -184,13 +208,16 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... The_tower_of_pain
+	@echo ... Squazzle
 	@echo ... src/Main.obj
 	@echo ... src/Main.i
 	@echo ... src/Main.s
 	@echo ... src/core/Game.obj
 	@echo ... src/core/Game.i
 	@echo ... src/core/Game.s
+	@echo ... src/core/Menu.obj
+	@echo ... src/core/Menu.i
+	@echo ... src/core/Menu.s
 .PHONY : help
 
 

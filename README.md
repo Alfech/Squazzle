@@ -1,5 +1,6 @@
-# The-Tower-of-Pain
+# Squazzle
 This project is a video game so I can have a better usage of all my unproductive "free" time.<br>
+This is a little Puzzle game with square where you have to reproce the original images.<br>
 
 ## how to build the program
 1. you need to download [cmake](https://cmake.org/download/). The minimum version requirement is 3.26<br>
@@ -18,7 +19,6 @@ you do not need to install SFML since it is already in the repo and already conf
 please update cmakeLists.txt file in consequences. <br>
 
 ## How to particiape
-As for now, this project is in private mode and I do not think it will change even after the game will be released on steam.<br>
-So the better (and only way) for you to particape is by asking me directly ! <br>
+If you want to add anything just create a pull request and I'll try to answer you as fast as possible ! <br>
 
 have fun !<br>

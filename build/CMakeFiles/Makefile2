@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/The_tower_of_pain.dir/all
+all: CMakeFiles/Squazzle.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,34 +70,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/The_tower_of_pain.dir/clean
+clean: CMakeFiles/Squazzle.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/The_tower_of_pain.dir
+# Target rules for target CMakeFiles/Squazzle.dir
 
 # All Build rule for target.
-CMakeFiles/The_tower_of_pain.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\The_tower_of_pain.dir\build.make CMakeFiles/The_tower_of_pain.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\The_tower_of_pain.dir\build.make CMakeFiles/The_tower_of_pain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\build\CMakeFiles --progress-num=1,2,3 "Built target The_tower_of_pain"
-.PHONY : CMakeFiles/The_tower_of_pain.dir/all
+CMakeFiles/Squazzle.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\build\CMakeFiles --progress-num=1,2,3,4 "Built target Squazzle"
+.PHONY : CMakeFiles/Squazzle.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/The_tower_of_pain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\build\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/The_tower_of_pain.dir/all
+CMakeFiles/Squazzle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Squazzle.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lafle\Desktop\StickWarrior\StickWarrior-vs-The-Tower-of-Pain\build\CMakeFiles 0
-.PHONY : CMakeFiles/The_tower_of_pain.dir/rule
+.PHONY : CMakeFiles/Squazzle.dir/rule
 
 # Convenience name for target.
-The_tower_of_pain: CMakeFiles/The_tower_of_pain.dir/rule
-.PHONY : The_tower_of_pain
+Squazzle: CMakeFiles/Squazzle.dir/rule
+.PHONY : Squazzle
 
 # clean rule for target.
-CMakeFiles/The_tower_of_pain.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\The_tower_of_pain.dir\build.make CMakeFiles/The_tower_of_pain.dir/clean
-.PHONY : CMakeFiles/The_tower_of_pain.dir/clean
+CMakeFiles/Squazzle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/clean
+.PHONY : CMakeFiles/Squazzle.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

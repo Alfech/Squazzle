@@ -5,7 +5,7 @@ int main() {
     
     std::cout << "Hello, World!"  << std::endl;
 
-    Game game = Game("Test", 500, 500, 32);
+    Game game = Game("Squazzle", 600, 600, 32);
 
     game.start();
 
