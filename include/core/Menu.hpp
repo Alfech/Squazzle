@@ -10,7 +10,7 @@ class Menu
 enum MenuItem {
     Play,
     Options,
-    LoadImage,
+    LoadImages,
     Exit,
 };
 

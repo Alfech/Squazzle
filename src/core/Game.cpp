@@ -2,25 +2,43 @@
 
 Game::Game(std::string title) : Game(title, sf::VideoMode::getDesktopMode().width, sf::VideoMode::getDesktopMode().height, sf::VideoMode::getDesktopMode().bitsPerPixel) {}
 
-
 Game::Game(std::string title, unsigned int windowWidth, unsigned int windowHeight, unsigned int bitsPerPixel)
     : videoMode(windowWidth, windowHeight, bitsPerPixel),
-    window(videoMode, title),
-    menu(static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y)) {}
-    
-Game::~Game() {
+      window(videoMode, title),
+      menu(static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y)) {}
+
+Game::~Game()
+{
     window.close();
 }
 
-void Game::start() {
+void Game::start()
+{
 
-    while(window.isOpen()) {
+    while (window.isOpen())
+    {
 
         sf::Event event;
 
-        while(window.pollEvent(event)) {
+        while (window.pollEvent(event))
+        {
 
-            switch (event.type) {
+            switch (event.type)
+            {
+            case sf::Event::KeyReleased:
+                switch (event.key.code)
+                {
+                case sf::Keyboard::Up:
+                    menu.MoveUp();
+                    break;
+
+                case sf::Keyboard::Down:
+                    menu.MoveDown();
+                    break;
+                    ;
+                }
+                break;
+
             case sf::Event::Closed:
                 stop();
                 break;
@@ -28,25 +46,23 @@ void Game::start() {
             default:
                 break;
             }
-
         }
 
         window.clear();
         menu.draw(window);
         window.display();
     }
-
 }
 
-void Game::stop() {
+void Game::stop()
+{
     window.close();
 }
 
-void Game::pause() {
-
+void Game::pause()
+{
 }
 
-void Game::update() {
-
+void Game::update()
+{
 }
-
