@@ -5,7 +5,7 @@ Game::Game(std::string title) : Game(title, sf::VideoMode::getDesktopMode().widt
 Game::Game(std::string title, unsigned int windowWidth, unsigned int windowHeight, unsigned int bitsPerPixel)
     : videoMode(windowWidth, windowHeight, bitsPerPixel),
       window(videoMode, title),
-      menu(static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y)) {}
+      mainMenu(std::vector<std::string>({"Play", "Options", "Load Images", "Exit"}), static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y)) {}
 
 Game::~Game()
 {
@@ -29,13 +29,38 @@ void Game::start()
                 switch (event.key.code)
                 {
                 case sf::Keyboard::Up:
-                    menu.MoveUp();
+                    mainMenu.MoveUp();
                     break;
 
                 case sf::Keyboard::Down:
-                    menu.MoveDown();
+                    mainMenu.MoveDown();
                     break;
-                    ;
+                
+                case sf::Keyboard::Return:
+
+                    switch(mainMenu.GetPressedItem())
+                    {
+                        case 0:
+                            std::cout << "Play" << std::endl;
+                            break;
+                        
+                        case 1:
+                            std::cout << "Options" << std::endl;
+                            break;
+
+                        case 2:
+                            std::cout << "Load images" << std::endl;
+                            break;
+
+                        case 3:
+                            std::cout << "Exit" << std::endl;
+                            break;
+                    }
+                    break;
+                
+                default:
+                    break;
+
                 }
                 break;
 
@@ -49,7 +74,7 @@ void Game::start()
         }
 
         window.clear();
-        menu.draw(window);
+        mainMenu.draw(window);
         window.display();
     }
 }

@@ -2,34 +2,27 @@
 #define CORE_MENU_H
 #include <SFML/Graphics.hpp>
 
-
-#define MENU_ITEM_SIZE 4
 class Menu
 {
 
-enum MenuItem {
-    Play,
-    Options,
-    LoadImages,
-    Exit,
-};
-
 public:
     Menu();
-    Menu(float width, float height);
+    Menu(std::vector<std::string> menuElements, float width, float height);
     ~Menu();
 
     void draw(sf::RenderWindow &window);
     void MoveUp();
     void MoveDown();
+    int GetPressedItem();
+    void MouseOver();
+    void MouseClicked();
 
 private:
     void loadFont(const std::string &fontPath);
 
-    int selectedItemIdex;
+    int selectedItemIdex, sizeOfMenu = 0;
     sf::Font font;
-    sf::Text menu[MENU_ITEM_SIZE];
+    std::vector<sf::Text> menu;
     
-
 };
 #endif

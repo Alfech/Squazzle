@@ -1,6 +1,7 @@
 #ifndef CORE_GAME_H
 #define CORE_GAME_H
 
+#include <iostream>
 #include <SFML/Graphics.hpp>
 #include "Menu.hpp"
 
@@ -19,7 +20,7 @@ public:
 private:
     sf::VideoMode videoMode;
     sf::RenderWindow window;
-    Menu menu;
+    Menu mainMenu;
 
 };
 #endif

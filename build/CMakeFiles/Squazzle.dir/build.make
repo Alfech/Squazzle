@@ -126,11 +126,11 @@ C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: CMakeFiles/Squazzle.d
 C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj
 C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj
 C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: CMakeFiles/Squazzle.dir/build.make
-C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/lib/libsfml-graphics.a
-C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/lib/libsfml-audio.a
-C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/lib/libsfml-network.a
-C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/lib/libsfml-window.a
-C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/lib/libsfml-system.a
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/lib/libsfml-graphics-d.a
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/lib/libsfml-audio-d.a
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/lib/libsfml-network-d.a
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/lib/libsfml-window-d.a
+C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/lib/libsfml-system-d.a
 C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: CMakeFiles/Squazzle.dir/linkLibs.rsp
 C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: CMakeFiles/Squazzle.dir/objects1.rsp
 C:/Users/lafle/Desktop/Squazzle/Squazzle/out/Squazzle.exe: CMakeFiles/Squazzle.dir/link.txt

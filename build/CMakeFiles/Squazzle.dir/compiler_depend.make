@@ -257,20 +257,13 @@ CMakeFiles/Squazzle.dir/src/Main.cpp.obj: C:/Users/lafle/Desktop/Squazzle/Squazz
 
 CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj: C:/Users/lafle/Desktop/Squazzle/Squazzle/src/core/Game.cpp \
   C:/Users/lafle/Desktop/Squazzle/Squazzle/include/core/Game.hpp \
-  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics.hpp \
-  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window.hpp \
-  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System.hpp \
-  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Config.hpp \
-  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Clock.hpp \
-  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Export.hpp \
-  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Time.hpp \
-  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Err.hpp \
-  C:/mingw64/include/c++/13.1.0/ostream \
+  C:/mingw64/include/c++/13.1.0/iostream \
   C:/mingw64/include/c++/13.1.0/bits/requires_hosted.h \
   C:/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++config.h \
   C:/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/os_defines.h \
   C:/mingw64/include/c++/13.1.0/x86_64-w64-mingw32/bits/cpu_defines.h \
   C:/mingw64/include/c++/13.1.0/pstl/pstl_config.h \
+  C:/mingw64/include/c++/13.1.0/ostream \
   C:/mingw64/include/c++/13.1.0/ios \
   C:/mingw64/include/c++/13.1.0/iosfwd \
   C:/mingw64/include/c++/13.1.0/bits/stringfwd.h \
@@ -404,6 +397,16 @@ CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj: C:/Users/lafle/Desktop/Squazzle/S
   C:/mingw64/include/c++/13.1.0/bits/locale_facets.tcc \
   C:/mingw64/include/c++/13.1.0/bits/basic_ios.tcc \
   C:/mingw64/include/c++/13.1.0/bits/ostream.tcc \
+  C:/mingw64/include/c++/13.1.0/istream \
+  C:/mingw64/include/c++/13.1.0/bits/istream.tcc \
+  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Graphics.hpp \
+  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Window.hpp \
+  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System.hpp \
+  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/Config.hpp \
+  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Clock.hpp \
+  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Export.hpp \
+  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Time.hpp \
+  C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/Err.hpp \
   C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/FileInputStream.hpp \
   C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/InputStream.hpp \
   C:/Users/lafle/Desktop/Squazzle/Squazzle/libraries/SFML-2.6.1/include/SFML/System/NonCopyable.hpp \

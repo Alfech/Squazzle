@@ -4,7 +4,7 @@
 
 Menu::Menu() {}
 
-Menu::Menu(float width, float height)
+Menu::Menu(std::vector<std::string> menuElements, float width, float height)
 {
 
     try
@@ -17,27 +17,16 @@ Menu::Menu(float width, float height)
         std::cerr << "Error : " << e.what() << std::endl;
     }
 
-    menu[Play].setFont(font);
-    menu[Play].setFillColor(sf::Color::Red);
-    menu[Play].setString("Play");
-    menu[Play].setPosition(sf::Vector2f(width / 2, height / (MENU_ITEM_SIZE + 1) * 1));
+    sizeOfMenu = menuElements.size();
 
-    menu[Options].setFont(font);
-    menu[Options].setFillColor(sf::Color::White);
-    menu[Options].setString("Options");
-    menu[Options].setPosition(sf::Vector2f(width / 2, height / (MENU_ITEM_SIZE + 1) * 2));
+    for(int i = 0; i < sizeOfMenu; i++)
+    {
+        menu.emplace_back(menuElements.at(i), font);
+        (i == 0) ? menu.at(i).setFillColor(sf::Color::Red) : menu.at(i).setFillColor(sf::Color::White);
+        menu.at(i).setPosition(sf::Vector2f(width / 2, height / (sizeOfMenu + 1) * (i+1)));
+    }
 
-    menu[LoadImages].setFont(font);
-    menu[LoadImages].setFillColor(sf::Color::White);
-    menu[LoadImages].setString("Load Images");
-    menu[LoadImages].setPosition(sf::Vector2f(width / 2, height / (MENU_ITEM_SIZE + 1) * 3));
-
-    menu[Exit].setFont(font);
-    menu[Exit].setFillColor(sf::Color::White);
-    menu[Exit].setString("Exit");
-    menu[Exit].setPosition(sf::Vector2f(width / 2, height / (MENU_ITEM_SIZE + 1) * 4));
-
-    selectedItemIdex = Play;
+    selectedItemIdex = 0;
 }
 
 Menu::~Menu() {}
@@ -70,64 +59,19 @@ void Menu::loadFont(const std::string &fontPath)
 
 void Menu::MoveUp()
 {
-
-    switch (selectedItemIdex)
-    {
-
-    case Play:
-        menu[Play].setFillColor(sf::Color::White);
-        menu[Exit].setFillColor(sf::Color::Red);
-        selectedItemIdex = Exit;
-        break;
-
-    case Options:
-        menu[Options].setFillColor(sf::Color::White);
-        menu[Play].setFillColor(sf::Color::Red);
-        selectedItemIdex = Play;
-        break;
-
-    case LoadImages:
-        menu[LoadImages].setFillColor(sf::Color::White);
-        menu[Options].setFillColor(sf::Color::Red);
-        selectedItemIdex = Options;
-        break;
-
-    case Exit:
-        menu[Exit].setFillColor(sf::Color::White);
-        menu[LoadImages].setFillColor(sf::Color::Red);
-        selectedItemIdex = LoadImages;
-        break;
-    }
+    menu[selectedItemIdex].setFillColor(sf::Color::White);
+    (selectedItemIdex == 0) ? selectedItemIdex = sizeOfMenu - 1 : selectedItemIdex -= 1;
+    menu[selectedItemIdex].setFillColor(sf::Color::Red);
 }
 
 void Menu::MoveDown()
 {
+    menu[selectedItemIdex].setFillColor(sf::Color::White);
+    (selectedItemIdex == sizeOfMenu - 1) ? selectedItemIdex = 0 : selectedItemIdex += 1;
+    menu[selectedItemIdex].setFillColor(sf::Color::Red);
+}
 
-    switch (selectedItemIdex)
-    {
-
-    case Play:
-        menu[Play].setFillColor(sf::Color::White);
-        menu[Options].setFillColor(sf::Color::Red);
-        selectedItemIdex = Options;
-        break;
-
-    case Options:
-        menu[Options].setFillColor(sf::Color::White);
-        menu[LoadImages].setFillColor(sf::Color::Red);
-        selectedItemIdex = LoadImages;
-        break;
-
-    case LoadImages:
-        menu[LoadImages].setFillColor(sf::Color::White);
-        menu[Exit].setFillColor(sf::Color::Red);
-        selectedItemIdex = Exit;
-        break;
-
-    case Exit:
-        menu[Exit].setFillColor(sf::Color::White);
-        menu[Play].setFillColor(sf::Color::Red);
-        selectedItemIdex = Play;
-        break;
-    }
+int Menu::GetPressedItem()
+{
+    return selectedItemIdex;
 }
