@@ -4,12 +4,12 @@
 
 Menu::Menu() {}
 
-Menu::Menu(std::vector<std::string> menuElements, float width, float height)
+Menu::Menu(std::vector<std::string> menuElements, float width, float height, std::string fontPath)
 {
 
     try
     {
-        loadFont("./src/resources/fonts/GROBOLD.ttf");
+        loadFont(fontPath);
     }
     catch (const std::exception &e)
     {

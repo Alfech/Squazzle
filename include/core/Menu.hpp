@@ -7,7 +7,7 @@ class Menu
 
 public:
     Menu();
-    Menu(std::vector<std::string> menuElements, float width, float height);
+    Menu(std::vector<std::string> menuElements, float width, float height, std::string fontPath);
     ~Menu();
 
     void draw(sf::RenderWindow &window);
