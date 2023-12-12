@@ -26,7 +26,7 @@ Menu::Menu(std::vector<std::string> menuElements, float width, float height, std
         menu.at(i).setPosition(sf::Vector2f(width / 2, height / (sizeOfMenu + 1) * (i+1)));
     }
 
-    selectedItemIdex = 0;
+    selectedItemIndex = 0;
 }
 
 Menu::~Menu() {}
@@ -37,6 +37,50 @@ void Menu::draw(sf::RenderWindow &window)
     {
         window.draw(menuItem);
     }
+}
+
+void Menu::MoveUp()
+{
+    menu[selectedItemIndex].setFillColor(sf::Color::White);
+    (selectedItemIndex == 0) ? selectedItemIndex = sizeOfMenu - 1 : selectedItemIndex -= 1;
+    menu[selectedItemIndex].setFillColor(sf::Color::Red);
+}
+
+void Menu::MoveDown()
+{
+    menu[selectedItemIndex].setFillColor(sf::Color::White);
+    (selectedItemIndex == sizeOfMenu - 1) ? selectedItemIndex = 0 : selectedItemIndex += 1;
+    menu[selectedItemIndex].setFillColor(sf::Color::Red);
+}
+
+void Menu::MouseOver(int x, int y) 
+{
+    for(int i = 0; i < sizeOfMenu; i++) 
+    {
+        if(isMouseOver(x, y, menu[i]))
+        {
+            menu[selectedItemIndex].setFillColor(sf::Color::White);
+            selectedItemIndex = i;
+            menu[i].setFillColor(sf::Color::Red);
+        }
+    }
+}
+
+int Menu::GetMouseClicked(int x, int y)
+{
+    for(const sf::Text &menuItem : menu)
+    {
+        if(isMouseOver(x, y, menuItem)){
+            return getSelectedItemIndex();
+        }
+    }
+
+    return -1;
+}
+
+int Menu::GetPressedItemIndex()
+{
+    return getSelectedItemIndex();
 }
 
 void Menu::loadFont(const std::string &fontPath)
@@ -57,21 +101,13 @@ void Menu::loadFont(const std::string &fontPath)
     }
 }
 
-void Menu::MoveUp()
+int Menu::getSelectedItemIndex()
 {
-    menu[selectedItemIdex].setFillColor(sf::Color::White);
-    (selectedItemIdex == 0) ? selectedItemIdex = sizeOfMenu - 1 : selectedItemIdex -= 1;
-    menu[selectedItemIdex].setFillColor(sf::Color::Red);
+    return selectedItemIndex;
 }
 
-void Menu::MoveDown()
+bool Menu::isMouseOver(int x, int y, sf::Text text)
 {
-    menu[selectedItemIdex].setFillColor(sf::Color::White);
-    (selectedItemIdex == sizeOfMenu - 1) ? selectedItemIdex = 0 : selectedItemIdex += 1;
-    menu[selectedItemIdex].setFillColor(sf::Color::Red);
-}
-
-int Menu::GetPressedItem()
-{
-    return selectedItemIdex;
+    sf::FloatRect textBound = text.getGlobalBounds();
+    return textBound.contains(static_cast<float>(x), static_cast<float>(y));
 }

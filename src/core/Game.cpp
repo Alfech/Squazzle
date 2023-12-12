@@ -17,12 +17,9 @@ void Game::start()
 
     while (window.isOpen())
     {
-
         sf::Event event;
-
         while (window.pollEvent(event))
         {
-
             switch (event.type)
             {
             case sf::Event::KeyReleased:
@@ -37,31 +34,21 @@ void Game::start()
                     break;
                 
                 case sf::Keyboard::Return:
-
-                    switch(mainMenu.GetPressedItem())
-                    {
-                        case 0:
-                            std::cout << "Play" << std::endl;
-                            break;
-                        
-                        case 1:
-                            std::cout << "Options" << std::endl;
-                            break;
-
-                        case 2:
-                            std::cout << "Load images" << std::endl;
-                            break;
-
-                        case 3:
-                            std::cout << "Exit" << std::endl;
-                            break;
-                    }
+                    changeMainMenuWindow(mainMenu.GetPressedItemIndex());
                     break;
-                
+
                 default:
                     break;
 
                 }
+                break;
+
+            case sf::Event::MouseMoved:
+                mainMenu.MouseOver(event.mouseMove.x, event.mouseMove.y);
+                break;
+
+            case sf::Event::MouseButtonReleased:
+                changeMainMenuWindow(mainMenu.GetMouseClicked(event.mouseButton.x, event.mouseButton.y));
                 break;
 
             case sf::Event::Closed:
@@ -90,4 +77,29 @@ void Game::pause()
 
 void Game::update()
 {
+}
+
+void Game::changeMainMenuWindow(int menuIndex)
+{
+    switch(menuIndex)
+    {
+    case 0:
+        std::cout << "Play" << std::endl;
+        break;
+                        
+    case 1:
+        std::cout << "Options" << std::endl;
+        break;
+
+    case 2:
+        std::cout << "Load images" << std::endl;
+        break;
+
+    case 3:
+        std::cout << "Exit" << std::endl;
+        break;
+
+    default:
+        break;
+    }
 }

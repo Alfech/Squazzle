@@ -16,6 +16,7 @@ public:
     void stop();
     void pause();
     void update();
+    void changeMainMenuWindow(int menuIndex);
    
 private:
     sf::VideoMode videoMode;
