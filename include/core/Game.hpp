@@ -1,6 +1,9 @@
 #ifndef CORE_GAME_H
 #define CORE_GAME_H
 
+#define UNICODE
+#define _UNICODE
+
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include <windows.h>

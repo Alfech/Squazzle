@@ -130,15 +130,13 @@ bool Game::openFile()
         {
             
             // SET INITIAL FOLDER
-            char path[MAX_PATH];
+            WCHAR path[MAX_PATH];
             DWORD length = GetModuleFileName(NULL, path, MAX_PATH);
             PathRemoveFileSpec(path);
-            WCHAR* wpath = new WCHAR[length+7];
-            MultiByteToWideChar(CP_UTF8, 0, path, -1, wpath, length+7);
-            wcscat(wpath, L"\\media");
+            wcscat(path, L"\\media");
 
             IShellItem *pFolderItem;
-            f_SysHr = SHCreateItemFromParsingName(wpath, NULL, IID_IShellItem, reinterpret_cast<void **>(&pFolderItem));
+            f_SysHr = SHCreateItemFromParsingName(path, NULL, IID_IShellItem, reinterpret_cast<void **>(&pFolderItem));
             if (SUCCEEDED(f_SysHr))
             {
                 f_SysHr = f_FileSystem->SetFolder(pFolderItem);
