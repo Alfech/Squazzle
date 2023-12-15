@@ -19,11 +19,11 @@ Menu::Menu(std::vector<std::string> menuElements, float width, float height, std
 
     sizeOfMenu = menuElements.size();
 
-    for(int i = 0; i < sizeOfMenu; i++)
+    for (int i = 0; i < sizeOfMenu; i++)
     {
         menu.emplace_back(menuElements.at(i), font);
         (i == 0) ? menu.at(i).setFillColor(sf::Color::Red) : menu.at(i).setFillColor(sf::Color::White);
-        menu.at(i).setPosition(sf::Vector2f(width / 2, height / (sizeOfMenu + 1) * (i+1)));
+        menu.at(i).setPosition(sf::Vector2f(width / 2, height / (sizeOfMenu + 1) * (i + 1)));
     }
 
     selectedItemIndex = 0;
@@ -53,11 +53,11 @@ void Menu::MoveDown()
     menu[selectedItemIndex].setFillColor(sf::Color::Red);
 }
 
-void Menu::MouseOver(int x, int y) 
+void Menu::MouseOver(int x, int y)
 {
-    for(int i = 0; i < sizeOfMenu; i++) 
+    for (int i = 0; i < sizeOfMenu; i++)
     {
-        if(isMouseOver(x, y, menu[i]))
+        if (isMouseOver(x, y, menu[i]))
         {
             menu[selectedItemIndex].setFillColor(sf::Color::White);
             selectedItemIndex = i;
@@ -68,9 +68,10 @@ void Menu::MouseOver(int x, int y)
 
 int Menu::GetMouseClicked(int x, int y)
 {
-    for(const sf::Text &menuItem : menu)
+    for (const sf::Text &menuItem : menu)
     {
-        if(isMouseOver(x, y, menuItem)){
+        if (isMouseOver(x, y, menuItem))
+        {
             return getSelectedItemIndex();
         }
     }
