@@ -16,6 +16,7 @@ public:
     void MouseOver(int x, int y);
     int GetMouseClicked(int x, int y);
     int GetPressedItemIndex();
+    void changeValueOfMenu(int index, std::string newValue);
 
 private:
     int selectedItemIndex, sizeOfMenu = 0;

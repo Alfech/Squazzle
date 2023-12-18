@@ -84,6 +84,13 @@ int Menu::GetPressedItemIndex()
     return getSelectedItemIndex();
 }
 
+
+void  Menu::changeValueOfMenu(int index, std::string newValue)
+{
+    if(index >= 0 || index < menu.size())
+        menu.at(index).setString(newValue);
+}
+
 void Menu::loadFont(const std::string &fontPath)
 {
 

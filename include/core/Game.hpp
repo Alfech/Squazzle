@@ -10,6 +10,7 @@
 #include <shobjidl.h>
 #include <shlobj.h>
 #include <shlwapi.h>
+#include <Shellapi.h>
 #include "Menu.hpp"
 
 class Game
@@ -28,6 +29,6 @@ private:
     sf::VideoMode videoMode;
     sf::RenderWindow window;
     Menu mainMenu;
-    bool openFile();
+    std::string openFile();
 };
 #endif

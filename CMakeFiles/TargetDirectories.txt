@@ -1,3 +1,0 @@
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/CMakeFiles/The_tower_of_pain.dir
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/CMakeFiles/edit_cache.dir
-C:/Users/lafle/Desktop/StickWarrior/StickWarrior-vs-The-Tower-of-Pain/CMakeFiles/rebuild_cache.dir

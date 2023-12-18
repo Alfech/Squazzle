@@ -513,4 +513,5 @@ CMakeFiles/Squazzle.dir/src/Main.cpp.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/shldisp.h \
  C:/mingw64/x86_64-w64-mingw32/include/knownfolders.h \
  C:/mingw64/x86_64-w64-mingw32/include/shlwapi.h \
+ C:/mingw64/x86_64-w64-mingw32/include/shellapi.h \
  C:/Users/lafle/Desktop/Squazzle/Squazzle/include/core/Menu.hpp

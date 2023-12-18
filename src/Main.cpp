@@ -6,7 +6,7 @@ int main()
 
     std::cout << "Hello! If you see this message, it means that you are in debug mode." << std::endl;
 
-    Game game = Game("Squazzle", 600, 600, 32);
+    Game game = Game("Squazzle");
 
     game.start();
 

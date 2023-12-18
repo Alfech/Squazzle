@@ -4,8 +4,12 @@ Game::Game(std::string title) : Game(title, sf::VideoMode::getDesktopMode().widt
 
 Game::Game(std::string title, unsigned int windowWidth, unsigned int windowHeight, unsigned int bitsPerPixel)
     : videoMode(windowWidth, windowHeight, bitsPerPixel),
-      window(videoMode, title),
-      mainMenu(std::vector<std::string>({"Play", "Options", "Load Images", "Exit"}), static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y), "./src/resources/fonts/GROBOLD.ttf") {}
+      window(videoMode, title, sf::Style::Fullscreen),
+      mainMenu(std::vector<std::string>({"Play", "Options", "Load Images", "Exit"}), static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y), "./src/resources/fonts/GROBOLD.ttf")
+{
+
+    window.setSize(sf::Vector2u(windowWidth, windowHeight));
+}
 
 Game::~Game()
 {
@@ -22,22 +26,31 @@ void Game::start()
         {
         case 0:
             std::cout << "Play" << std::endl;
+            mainMenuIndex = -1;
             break;
 
         case 1:
             std::cout << "Options" << std::endl;
+            mainMenuIndex = -1;
             break;
 
         case 2:
         {
-            if (openFile())
+            std::string imagePath = openFile();
+
+            if (imagePath.empty())
             {
+                mainMenu.changeValueOfMenu(2, "Load Images");
             }
             else
             {
-                mainMenuIndex = -1;
+                std::cout << imagePath << std::endl;
+                const size_t slash = imagePath.find_last_of("/\\");
+                std::string imageName = imagePath.substr(slash + 1);
+                mainMenu.changeValueOfMenu(2, "Load Images - " + imageName);
             }
 
+            mainMenuIndex = -1;
             break;
         }
 
@@ -112,12 +125,11 @@ void Game::update()
 }
 
 // https://stackoverflow.com/questions/68601080/how-do-you-open-a-file-explorer-dialogue-in-c
-bool Game::openFile()
+std::string Game::openFile()
 {
-    std::string sSelectedFile;
-    std::string sFilePath;
+    window.setVisible(false);
 
-    bool succeeded = FALSE;
+    std::string sFilePath = "";
 
     //  CREATE FILE OBJECT INSTANCE
     HRESULT f_SysHr = CoInitializeEx(NULL, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
@@ -128,7 +140,7 @@ bool Game::openFile()
         f_SysHr = CoCreateInstance(CLSID_FileOpenDialog, NULL, CLSCTX_ALL, IID_IFileOpenDialog, reinterpret_cast<void **>(&f_FileSystem));
         if (SUCCEEDED(f_SysHr))
         {
-            
+
             // SET INITIAL FOLDER
             WCHAR path[MAX_PATH];
             DWORD length = GetModuleFileName(NULL, path, MAX_PATH);
@@ -147,6 +159,8 @@ bool Game::openFile()
             f_SysHr = f_FileSystem->Show(NULL);
             if (SUCCEEDED(f_SysHr))
             {
+
+
                 //  RETRIEVE FILE NAME FROM THE SELECTED ITEM
                 IShellItem *f_Files;
                 f_SysHr = f_FileSystem->GetResult(&f_Files);
@@ -161,11 +175,6 @@ bool Game::openFile()
                         std::wstring path(f_Path);
                         std::string c(path.begin(), path.end());
                         sFilePath = c;
-
-                        //  FORMAT STRING FOR EXECUTABLE NAME
-                        const size_t slash = sFilePath.find_last_of("/\\");
-                        sSelectedFile = sFilePath.substr(slash + 1);
-                        succeeded = TRUE;
                     }
                     f_Files->Release();
                 }
@@ -174,5 +183,6 @@ bool Game::openFile()
         }
         CoUninitialize();
     }
-    return succeeded;
+    window.setVisible(true);
+    return sFilePath;
 }
