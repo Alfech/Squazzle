@@ -4,11 +4,12 @@ Game::Game(std::string title) : Game(title, sf::VideoMode::getDesktopMode().widt
 
 Game::Game(std::string title, unsigned int windowWidth, unsigned int windowHeight, unsigned int bitsPerPixel)
     : videoMode(windowWidth, windowHeight, bitsPerPixel),
-      window(videoMode, title, sf::Style::Fullscreen),
+      window(videoMode, title),
       mainMenu(std::vector<std::string>({"Play", "Options", "Load Images", "Exit"}), static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y), "./src/resources/fonts/GROBOLD.ttf")
 {
-
-    window.setSize(sf::Vector2u(windowWidth, windowHeight));
+    // Force the window to be maximize.
+    HWND hwnd = window.getSystemHandle();
+    ShowWindow(hwnd, SW_MAXIMIZE);
 }
 
 Game::~Game()
@@ -97,11 +98,18 @@ void Game::start()
                     stop();
                     break;
 
+                case sf::Event::Resized:
+                {
+                    sf::FloatRect visibleArea = sf::FloatRect(0.f, 0.f, event.size.width, event.size.height);
+                    window.setView(sf::View(visibleArea));
+                    mainMenu.updateMenuPosition(static_cast<float>(event.size.width), static_cast<float>(event.size.height));
+                    break;
+                }
+
                 default:
                     break;
                 }
             }
-
             window.clear();
             mainMenu.draw(window);
             window.display();
@@ -159,7 +167,6 @@ std::string Game::openFile()
             f_SysHr = f_FileSystem->Show(NULL);
             if (SUCCEEDED(f_SysHr))
             {
-
 
                 //  RETRIEVE FILE NAME FROM THE SELECTED ITEM
                 IShellItem *f_Files;

@@ -11,17 +11,19 @@ public:
     ~Menu();
 
     void draw(sf::RenderWindow &window);
+    void updateMenuPosition(float width, float height);
     void MoveUp();
     void MoveDown();
     void MouseOver(int x, int y);
     int GetMouseClicked(int x, int y);
     int GetPressedItemIndex();
     void changeValueOfMenu(int index, std::string newValue);
+    std::vector<sf::Text> menu;
 
 private:
     int selectedItemIndex, sizeOfMenu = 0;
     sf::Font font;
-    std::vector<sf::Text> menu;
+    
     void loadFont(const std::string &fontPath);
     int getSelectedItemIndex();
     bool isMouseOver(int x, int y, sf::Text text);

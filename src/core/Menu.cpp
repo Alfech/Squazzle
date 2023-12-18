@@ -24,6 +24,7 @@ Menu::Menu(std::vector<std::string> menuElements, float width, float height, std
         menu.emplace_back(menuElements.at(i), font);
         (i == 0) ? menu.at(i).setFillColor(sf::Color::Red) : menu.at(i).setFillColor(sf::Color::White);
         menu.at(i).setPosition(sf::Vector2f(width / 2, height / (sizeOfMenu + 1) * (i + 1)));
+        menu[i].setOrigin(menu[i].getGlobalBounds().width / 2, menu[i].getGlobalBounds().height / 2);
     }
 
     selectedItemIndex = 0;
@@ -33,9 +34,18 @@ Menu::~Menu() {}
 
 void Menu::draw(sf::RenderWindow &window)
 {
-    for (const sf::Text &menuItem : menu)
+    for (const auto &menuItem : menu)
     {
         window.draw(menuItem);
+    }
+}
+
+void Menu::updateMenuPosition(float width, float height)
+{
+
+    for (int i = 0; i < sizeOfMenu; i++)
+    {
+        menu[i].setPosition(sf::Vector2f(width / 2, height / (sizeOfMenu + 1) * (i + 1)));
     }
 }
 
@@ -57,7 +67,7 @@ void Menu::MouseOver(int x, int y)
 {
     for (int i = 0; i < sizeOfMenu; i++)
     {
-        if (isMouseOver(x, y, menu[i]))
+        if (isMouseOver(x, y, menu.at(i)))
         {
             menu[selectedItemIndex].setFillColor(sf::Color::White);
             selectedItemIndex = i;
@@ -84,10 +94,9 @@ int Menu::GetPressedItemIndex()
     return getSelectedItemIndex();
 }
 
-
-void  Menu::changeValueOfMenu(int index, std::string newValue)
+void Menu::changeValueOfMenu(int index, std::string newValue)
 {
-    if(index >= 0 || index < menu.size())
+    if (index >= 0 || index < menu.size())
         menu.at(index).setString(newValue);
 }
 
