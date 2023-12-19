@@ -135,8 +135,6 @@ void Game::update()
 // https://stackoverflow.com/questions/68601080/how-do-you-open-a-file-explorer-dialogue-in-c
 std::string Game::openFile()
 {
-    window.setVisible(false);
-
     std::string sFilePath = "";
 
     //  CREATE FILE OBJECT INSTANCE
@@ -164,10 +162,10 @@ std::string Game::openFile()
             }
 
             //  SHOW OPEN FILE DIALOG WINDOW
-            f_SysHr = f_FileSystem->Show(NULL);
+            HWND hwnd = window.getSystemHandle();
+            f_SysHr = f_FileSystem->Show(hwnd);
             if (SUCCEEDED(f_SysHr))
             {
-
                 //  RETRIEVE FILE NAME FROM THE SELECTED ITEM
                 IShellItem *f_Files;
                 f_SysHr = f_FileSystem->GetResult(&f_Files);
@@ -190,6 +188,5 @@ std::string Game::openFile()
         }
         CoUninitialize();
     }
-    window.setVisible(true);
     return sFilePath;
 }
