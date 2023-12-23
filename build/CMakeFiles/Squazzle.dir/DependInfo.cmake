@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/lafle/Desktop/Squazzle/Squazzle/src/Main.cpp" "CMakeFiles/Squazzle.dir/src/Main.cpp.obj" "gcc" "CMakeFiles/Squazzle.dir/src/Main.cpp.obj.d"
+  "C:/Users/lafle/Desktop/Squazzle/Squazzle/src/core/CoreData.cpp" "CMakeFiles/Squazzle.dir/src/core/CoreData.cpp.obj" "gcc" "CMakeFiles/Squazzle.dir/src/core/CoreData.cpp.obj.d"
   "C:/Users/lafle/Desktop/Squazzle/Squazzle/src/core/Game.cpp" "CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj" "gcc" "CMakeFiles/Squazzle.dir/src/core/Game.cpp.obj.d"
   "C:/Users/lafle/Desktop/Squazzle/Squazzle/src/core/Menu.cpp" "CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj" "gcc" "CMakeFiles/Squazzle.dir/src/core/Menu.cpp.obj.d"
   )

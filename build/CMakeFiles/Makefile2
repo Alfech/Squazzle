@@ -80,12 +80,12 @@ clean: CMakeFiles/Squazzle.dir/clean
 CMakeFiles/Squazzle.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lafle\Desktop\Squazzle\Squazzle\build\CMakeFiles --progress-num=1,2,3,4 "Built target Squazzle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lafle\Desktop\Squazzle\Squazzle\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target Squazzle"
 .PHONY : CMakeFiles/Squazzle.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Squazzle.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lafle\Desktop\Squazzle\Squazzle\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lafle\Desktop\Squazzle\Squazzle\build\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Squazzle.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lafle\Desktop\Squazzle\Squazzle\build\CMakeFiles 0
 .PHONY : CMakeFiles/Squazzle.dir/rule

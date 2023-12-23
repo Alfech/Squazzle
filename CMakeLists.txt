@@ -14,6 +14,7 @@ set(SOURCE_FILES
     src/main.cpp
     src/core/Game.cpp
     src/core/Menu.cpp
+    src/core/CoreData.cpp
 )
 
 if(CMAKE_BUILD_TYPE MATCHES Debug)

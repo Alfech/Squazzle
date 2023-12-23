@@ -5,8 +5,8 @@ Game::Game(std::string title) : Game(title, sf::VideoMode::getDesktopMode().widt
 Game::Game(std::string title, unsigned int windowWidth, unsigned int windowHeight, unsigned int bitsPerPixel)
     : videoMode(windowWidth, windowHeight, bitsPerPixel),
       window(videoMode, title),
-      mainMenu(std::vector<std::string>({"Play", "Options", "Load Images", "Exit"}), static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y), "./src/resources/fonts/GROBOLD.ttf"),
-      option(std::vector<std::string>({"Back to main menu", "Number of Pieces : (10) 50 100"}), static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y), "./src/resources/fonts/GROBOLD.ttf")
+      mainMenu(std::vector<std::string>({CoreData::mainMenu.PLAY.name, CoreData::mainMenu.OPTIONS.name, CoreData::mainMenu.LOAD_IMAGE.name, CoreData::mainMenu.EXIT.name}), static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y), "./src/resources/fonts/GROBOLD.ttf"),
+      option(std::vector<std::string>({CoreData::optionsMenu.BACK_TO_MENU.name, CoreData::optionsMenu.NUMBER_OF_TILES.name + " " + CoreData::difficulty.EASY.name}), static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y), "./src/resources/fonts/GROBOLD.ttf")
 
 {
     // Force the window to be maximize.
@@ -22,18 +22,17 @@ Game::~Game()
 void Game::start()
 {
     int mainMenuIndex = -1;
-    int currentDifficulty = 0;
+    int currentDifficulty = CoreData::difficulty.EASY.index;
 
     while (window.isOpen())
     {
-        switch (mainMenuIndex)
+
+        if (mainMenuIndex == CoreData::mainMenu.PLAY.index)
         {
-        case 0:
             std::cout << "Play" << std::endl;
             mainMenuIndex = -1;
-            break;
-
-        case 1:
+        }
+        else if (mainMenuIndex == CoreData::mainMenu.OPTIONS.index)
         {
             int optionIndex = -1;
             sf::Event event;
@@ -86,47 +85,34 @@ void Game::start()
                 }
             }
 
-            switch (optionIndex)
+            if (optionIndex == CoreData::optionsMenu.BACK_TO_MENU.index)
             {
-            case 0:
                 mainMenuIndex = -1;
-                break;
-
-            case 1:
+            }
+            else if (optionIndex == CoreData::optionsMenu.NUMBER_OF_TILES.index)
             {
                 currentDifficulty = (currentDifficulty + 1) % 3;
                 std::cout << "Difficulty : " << currentDifficulty << std::endl;
-                switch (currentDifficulty)
+
+                if (currentDifficulty == CoreData::difficulty.EASY.index)
                 {
-                case 0:
-                    option.changeValueOfMenu(1, "Number of Pieces : (10) 50 100");
-                    break;
-
-                case 1:
-                    option.changeValueOfMenu(1, "Number of Pieces : 10 (50) 100");
-                    break;
-
-                case 2:
-                    option.changeValueOfMenu(1, "Number of Pieces : 10 50 (100)");
-                    break;
-
-                default:
-                    break;
+                    option.changeValueOfMenu(CoreData::optionsMenu.NUMBER_OF_TILES.index, CoreData::optionsMenu.NUMBER_OF_TILES.name + " " + CoreData::difficulty.EASY.name);
                 }
-            }
-            break;
-
-            default:
-                break;
+                else if (currentDifficulty == CoreData::difficulty.MEDIUM.index)
+                {
+                    option.changeValueOfMenu(CoreData::optionsMenu.NUMBER_OF_TILES.index, CoreData::optionsMenu.NUMBER_OF_TILES.name + " " + CoreData::difficulty.MEDIUM.name);
+                }
+                else if (currentDifficulty == CoreData::difficulty.HARD.index)
+                {
+                    option.changeValueOfMenu(CoreData::optionsMenu.NUMBER_OF_TILES.index, CoreData::optionsMenu.NUMBER_OF_TILES.name + " " + CoreData::difficulty.HARD.name);
+                }
             }
 
             window.clear();
             option.draw(window);
             window.display();
-            break;
         }
-
-        case 2:
+        else if (mainMenuIndex == CoreData::mainMenu.LOAD_IMAGE.index)
         {
             std::string imagePath = openFile();
 
@@ -143,14 +129,12 @@ void Game::start()
             }
 
             mainMenuIndex = -1;
-            break;
         }
-
-        case 3:
+        else if (mainMenuIndex == CoreData::mainMenu.EXIT.index)
+        {
             stop();
-            break;
-
-        default:
+        }
+        else
         {
             sf::Event event;
             while (window.pollEvent(event))
@@ -207,8 +191,6 @@ void Game::start()
             window.clear();
             mainMenu.draw(window);
             window.display();
-            break;
-        }
         }
     }
 }

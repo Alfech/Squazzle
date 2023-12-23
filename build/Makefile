@@ -152,6 +152,30 @@ src/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
+src/core/CoreData.obj: src/core/CoreData.cpp.obj
+.PHONY : src/core/CoreData.obj
+
+# target to build an object file
+src/core/CoreData.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/src/core/CoreData.cpp.obj
+.PHONY : src/core/CoreData.cpp.obj
+
+src/core/CoreData.i: src/core/CoreData.cpp.i
+.PHONY : src/core/CoreData.i
+
+# target to preprocess a source file
+src/core/CoreData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/src/core/CoreData.cpp.i
+.PHONY : src/core/CoreData.cpp.i
+
+src/core/CoreData.s: src/core/CoreData.cpp.s
+.PHONY : src/core/CoreData.s
+
+# target to generate assembly for a file
+src/core/CoreData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Squazzle.dir\build.make CMakeFiles/Squazzle.dir/src/core/CoreData.cpp.s
+.PHONY : src/core/CoreData.cpp.s
+
 src/core/Game.obj: src/core/Game.cpp.obj
 .PHONY : src/core/Game.obj
 
@@ -212,6 +236,9 @@ help:
 	@echo ... src/Main.obj
 	@echo ... src/Main.i
 	@echo ... src/Main.s
+	@echo ... src/core/CoreData.obj
+	@echo ... src/core/CoreData.i
+	@echo ... src/core/CoreData.s
 	@echo ... src/core/Game.obj
 	@echo ... src/core/Game.i
 	@echo ... src/core/Game.s

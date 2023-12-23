@@ -12,6 +12,7 @@
 #include <shlwapi.h>
 #include <Shellapi.h>
 #include "Menu.hpp"
+#include "CoreData.hpp"
 
 class Game
 {
