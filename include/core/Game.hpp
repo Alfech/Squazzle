@@ -29,6 +29,7 @@ private:
     sf::VideoMode videoMode;
     sf::RenderWindow window;
     Menu mainMenu;
+    Menu option;
     std::string openFile();
 };
 #endif

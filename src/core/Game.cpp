@@ -5,7 +5,9 @@ Game::Game(std::string title) : Game(title, sf::VideoMode::getDesktopMode().widt
 Game::Game(std::string title, unsigned int windowWidth, unsigned int windowHeight, unsigned int bitsPerPixel)
     : videoMode(windowWidth, windowHeight, bitsPerPixel),
       window(videoMode, title),
-      mainMenu(std::vector<std::string>({"Play", "Options", "Load Images", "Exit"}), static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y), "./src/resources/fonts/GROBOLD.ttf")
+      mainMenu(std::vector<std::string>({"Play", "Options", "Load Images", "Exit"}), static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y), "./src/resources/fonts/GROBOLD.ttf"),
+      option(std::vector<std::string>({"Back to main menu", "Number of Pieces : (10) 50 100"}), static_cast<float>(window.getSize().x), static_cast<float>(window.getSize().y), "./src/resources/fonts/GROBOLD.ttf")
+
 {
     // Force the window to be maximize.
     HWND hwnd = window.getSystemHandle();
@@ -20,6 +22,7 @@ Game::~Game()
 void Game::start()
 {
     int mainMenuIndex = -1;
+    int currentDifficulty = 0;
 
     while (window.isOpen())
     {
@@ -31,9 +34,97 @@ void Game::start()
             break;
 
         case 1:
-            std::cout << "Options" << std::endl;
-            mainMenuIndex = -1;
+        {
+            int optionIndex = -1;
+            sf::Event event;
+            while (window.pollEvent(event))
+            {
+                switch (event.type)
+                {
+                case sf::Event::KeyReleased:
+                    switch (event.key.code)
+                    {
+                    case sf::Keyboard::Up:
+                        option.MoveUp();
+                        break;
+
+                    case sf::Keyboard::Down:
+                        option.MoveDown();
+                        break;
+
+                    case sf::Keyboard::Return:
+                        optionIndex = option.GetPressedItemIndex();
+                        break;
+
+                    default:
+                        break;
+                    }
+                    break;
+
+                case sf::Event::MouseMoved:
+                    option.MouseOver(event.mouseMove.x, event.mouseMove.y);
+                    break;
+
+                case sf::Event::MouseButtonReleased:
+                    optionIndex = option.GetMouseClicked(event.mouseButton.x, event.mouseButton.y);
+                    break;
+
+                case sf::Event::Closed:
+                    stop();
+                    break;
+
+                case sf::Event::Resized:
+                {
+                    sf::FloatRect visibleArea = sf::FloatRect(0.f, 0.f, event.size.width, event.size.height);
+                    window.setView(sf::View(visibleArea));
+                    option.updateMenuPosition(static_cast<float>(event.size.width), static_cast<float>(event.size.height));
+                    break;
+                }
+
+                default:
+                    break;
+                }
+            }
+
+            switch (optionIndex)
+            {
+            case 0:
+                mainMenuIndex = -1;
+                break;
+
+            case 1:
+            {
+                currentDifficulty = (currentDifficulty + 1) % 3;
+                std::cout << "Difficulty : " << currentDifficulty << std::endl;
+                switch (currentDifficulty)
+                {
+                case 0:
+                    option.changeValueOfMenu(1, "Number of Pieces : (10) 50 100");
+                    break;
+
+                case 1:
+                    option.changeValueOfMenu(1, "Number of Pieces : 10 (50) 100");
+                    break;
+
+                case 2:
+                    option.changeValueOfMenu(1, "Number of Pieces : 10 50 (100)");
+                    break;
+
+                default:
+                    break;
+                }
+            }
             break;
+
+            default:
+                break;
+            }
+
+            window.clear();
+            option.draw(window);
+            window.display();
+            break;
+        }
 
         case 2:
         {
@@ -71,13 +162,16 @@ void Game::start()
                     {
                     case sf::Keyboard::Up:
                         mainMenu.MoveUp();
+                        std::cout << "Up : " << mainMenu.GetPressedItemIndex() << std::endl;
                         break;
 
                     case sf::Keyboard::Down:
                         mainMenu.MoveDown();
+                        std::cout << "Down : " << mainMenu.GetPressedItemIndex() << std::endl;
                         break;
 
                     case sf::Keyboard::Return:
+                        std::cout << "Enter : " << mainMenu.GetPressedItemIndex() << std::endl;
                         mainMenuIndex = mainMenu.GetPressedItemIndex();
                         break;
 

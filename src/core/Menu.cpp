@@ -52,14 +52,14 @@ void Menu::updateMenuPosition(float width, float height)
 void Menu::MoveUp()
 {
     menu[selectedItemIndex].setFillColor(sf::Color::White);
-    (selectedItemIndex == 0) ? selectedItemIndex = sizeOfMenu - 1 : selectedItemIndex -= 1;
+    selectedItemIndex = (selectedItemIndex - 1 + sizeOfMenu) % sizeOfMenu;
     menu[selectedItemIndex].setFillColor(sf::Color::Red);
 }
 
 void Menu::MoveDown()
 {
     menu[selectedItemIndex].setFillColor(sf::Color::White);
-    (selectedItemIndex == sizeOfMenu - 1) ? selectedItemIndex = 0 : selectedItemIndex += 1;
+    selectedItemIndex = (selectedItemIndex + 1) % sizeOfMenu;
     menu[selectedItemIndex].setFillColor(sf::Color::Red);
 }
 
